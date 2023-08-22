@@ -1,0 +1,93 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Z from '../components/Z.astro';
+
+---
+
+
+<Layout title="About Me">
+  <main>
+    <section class="about-section">
+      <h1 class="about-title">Hello,<span class="text-gradient"> I'm Nassim Maaoui</span>👋</h1>
+  
+      <p class="about-description">💻 Innovative desktop app developer with a year of experience.
+
+
+Passionate about crafting user-friendly solutions that blend seamlessly into workflows. 👨‍💻
+
+🚀 Successfully created 3 apps for a top industry player.
+
+💡 Prioritize intuitive, efficient, and visually appealing designs.
+
+🌐 Full lifecycle expertise: requirement gathering, design, coding, testing, and deployment.
+
+🤝 Collaborative team player with a knack for translating complexity into elegant software.
+
+🔍 Always learning and adapting to stay on the cutting edge.
+
+🌟 Ready to tackle challenges and create impactful desktop apps!</p>
+    </section>
+    <section class="link-section">
+      <h2 class="section-heading"><span class="text-gradient">Explore More</span></h2>
+      <ul class="link-card-grid">
+        
+      </ul>
+	  <ul><Z
+		href="/"
+		title="Home"
+		body="Go back to the home page"
+		  /></ul>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+  main {
+    margin: auto;
+    padding: 2rem;
+    max-width: 800px;
+  }
+
+  .about-section {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .about-description {
+    font-size: 1.2rem;
+    color: #666;
+  }
+
+  .link-section {
+    text-align: center;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+  }
+</style>
